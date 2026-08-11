@@ -16,7 +16,7 @@
     --whatsapp: #25d366;
     --whatsapp-hover: #1da851;
     
-    --border-color: rgba(212, 175, 55, 0.2); /* Borde Fino Dorado */
+    --border-color: rgba(212, 175, 55, 0.2);
     --radius-sm: 8px;
     --radius-md: 16px;
     --radius-lg: 24px;
@@ -275,7 +275,7 @@ body {
 }
 
 /* ==========================================================================
-   VIDEOS PROFESIONALES
+   VIDEOS DEMOSTRATIVOS
    ========================================================================== */
 .videos-section {
     padding: 90px 0;
@@ -342,7 +342,7 @@ body {
 }
 
 /* ==========================================================================
-   PRODUCTOS CON IMÁGENES REALES
+   CATÁLOGO DE PRODUCTOS BASE
    ========================================================================== */
 .products {
     padding: 100px 0;
@@ -388,9 +388,10 @@ body {
 }
 
 .animated-preview {
-    height: 220px;
+    height: 240px;
     overflow: hidden;
     position: relative;
+    background: #ffffff;
 }
 
 .product-img {
@@ -459,7 +460,7 @@ body {
 }
 
 /* ==========================================================================
-   ESTUDIO DE PERSONALIZACIÓN INTERACTIVO
+   ESTUDIO DE PERSONALIZACIÓN Y MOCKUP SIMULATOR
    ========================================================================== */
 .studio-section {
     padding: 100px 0;
@@ -553,13 +554,13 @@ body {
     margin-top: 6px;
 }
 
-/* Vista Previa del Mockup */
+/* Visor de Previsualización Simulatriz */
 .studio-preview-box {
     position: relative;
-    background: var(--bg-dark);
+    background: #ffffff;
     border: 1px solid var(--border-color);
     border-radius: var(--radius-md);
-    height: 450px;
+    height: 480px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -582,23 +583,25 @@ body {
     transition: var(--transition);
 }
 
-/* Zonas de Estampado sobre la Prenda */
+/* Capa de la estampa proyectada sobre el producto */
 .mockup-stamp-zone {
     position: absolute;
-    width: 140px;
-    height: 140px;
+    width: 150px;
+    height: 150px;
     border: 2px dashed var(--gold-primary);
     border-radius: var(--radius-sm);
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgba(7, 31, 19, 0.65);
-    backdrop-filter: blur(4px);
+    background: rgba(7, 31, 19, 0.45);
+    backdrop-filter: blur(2px);
     overflow: hidden;
-    transition: all 0.4s ease;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    /* Efecto de fusión realista sobre prendas y tazas */
+    mix-blend-mode: multiply;
 }
 
-/* Posicionamiento dinámico por clases CSS */
+/* Posicionamiento dinámico */
 .mockup-stamp-zone.pos-centro {
     top: 50%;
     left: 50%;
@@ -606,36 +609,36 @@ body {
 }
 
 .mockup-stamp-zone.pos-pecho-izq {
-    top: 35%;
-    left: 60%;
-    width: 90px;
-    height: 90px;
+    top: 36%;
+    left: 58%;
+    width: 85px;
+    height: 85px;
     transform: translate(-50%, -50%);
 }
 
 .mockup-stamp-zone.pos-espalda {
-    top: 45%;
+    top: 48%;
     left: 50%;
-    width: 150px;
-    height: 150px;
+    width: 170px;
+    height: 170px;
     transform: translate(-50%, -50%);
 }
 
 .stamp-placeholder {
     text-align: center;
-    color: var(--ivory-muted);
+    color: var(--ivory-white);
     padding: 10px;
 }
 
 .stamp-placeholder i {
-    font-size: 1.8rem;
+    font-size: 2rem;
     margin-bottom: 6px;
     color: var(--gold-primary);
 }
 
 .stamp-placeholder span {
     display: block;
-    font-size: 0.7rem;
+    font-size: 0.72rem;
     font-weight: 600;
 }
 
@@ -649,12 +652,13 @@ body {
     position: absolute;
     top: 16px;
     right: 16px;
-    background: rgba(7, 31, 19, 0.85);
+    background: rgba(7, 31, 19, 0.9);
     border: 1px solid var(--border-color);
-    padding: 4px 12px;
+    padding: 6px 14px;
     border-radius: 50px;
     font-size: 0.75rem;
     color: var(--gold-primary);
+    font-weight: 600;
 }
 
 /* ==========================================================================
