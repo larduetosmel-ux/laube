@@ -1,12 +1,155 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>laube</title>
+    <title>Estampados Exclusivos | Tu Marca, Tu Estilo</title>
     <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&family=Space+Grotesk:wght@700&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    
+
+    <!-- Header / Nav -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <i class="fa-solid fa-wand-magic-sparkles logo-icon"></i>
+                <span>ESTAMPADOS</span>
+            </a>
+            <nav class="nav-links">
+                <a href="#inicio">Inicio</a>
+                <a href="#productos">Productos</a>
+                <a href="#nosotros">Nosotros</a>
+                <a href="#contacto" class="btn-nav">Cotizar</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="hero-bg-glow"></div>
+        <div class="container hero-content">
+            <span class="badge">Personalización Premium</span>
+            <h1>Transformamos tus ideas en <span>piezas únicas</span></h1>
+            <p>Sublimación y estampado de alta definición sobre camisetas, tazas, accesorios y más. Dale vida a tu estilo o potencia la imagen de tu negocio.</p>
+            <div class="hero-buttons">
+                <a href="https://wa.me/97412345678?text=Hola,%20quiero%20cotizar%20un%20producto%20personalizado" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                    <i class="fa-brands fa-whatsapp"></i> Pedir por WhatsApp
+                </a>
+                <a href="#productos" class="btn btn-secondary">Ver Catálogo</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ventajas / Features -->
+    <section class="features">
+        <div class="container features-grid">
+            <div class="feature-card">
+                <i class="fa-solid fa-palette"></i>
+                <h3>Colores Vibrantes</h3>
+                <p>Impresión de alta resolución que resalta cada detalle de tu diseño.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fa-solid fa-shield-halved"></i>
+                <h3>Máxima Durabilidad</h3>
+                <p>Materiales y tintas resistentes que no se desgastan ni pierde color.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fa-solid fa-bolt"></i>
+                <h3>Entrega Rápida</h3>
+                <p>Atención directa y producción ágil para tus pedidos personales o corporativos.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Productos Destacados -->
+    <section id="productos" class="products">
+        <div class="container">
+            <div class="section-title">
+                <h2>Nuestros Productos</h2>
+                <p>Descubre lo que podemos crear para ti</p>
+            </div>
+
+            <div class="product-grid">
+                <!-- Producto 1 -->
+                <article class="product-card">
+                    <div class="card-image">
+                        <i class="fa-solid fa-shirt product-icon"></i>
+                        <span class="card-badge">Más Vendido</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Camisetas Personalizadas</h3>
+                        <p>Algodón y poliéster con estampado en alta definición. Resistencia superior a las lavadas.</p>
+                        <a href="https://wa.me/97412345678?text=Hola,%20me%20interesan%20las%20camisetas%20personalizadas" target="_blank" rel="noopener noreferrer" class="card-btn">
+                            Personalizar <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Producto 2 -->
+                <article class="product-card">
+                    <div class="card-image">
+                        <i class="fa-solid fa-mug-hot product-icon"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>Tazas Mágicas & Cerámica</h3>
+                        <p>Diseños fotográficos, frases motivacionales o logos corporativos con acabado brillante.</p>
+                        <a href="https://wa.me/97412345678?text=Hola,%20me%20interesan%20las%20tazas%20personalizadas" target="_blank" rel="noopener noreferrer" class="card-btn">
+                            Personalizar <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Producto 3 -->
+                <article class="product-card">
+                    <div class="card-image">
+                        <i class="fa-solid fa-hat-cowboy product-icon"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>Gorras & Accesorios</h3>
+                        <p>Gorras trucker, vinilo textil y bordados personalizados para marcas y eventos.</p>
+                        <a href="https://wa.me/97412345678?text=Hola,%20me%20interesan%20las%20gorras%20y%20accesorios" target="_blank" rel="noopener noreferrer" class="card-btn">
+                            Personalizar <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Banner Call to Action -->
+    <section id="contacto" class="cta-banner">
+        <div class="container cta-content">
+            <h2>¿Tienes una idea en mente o un pedido corporativo?</h2>
+            <p>Hablamos directamente y te asesoramos para lograr el mejor acabado visual.</p>
+            <a href="https://wa.me/97412345678?text=Hola,%20tengo%20una%20idea%20de%20diseño%20y%20quisiera%20asesoría" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp-large">
+                <i class="fa-brands fa-whatsapp"></i> Chatear con nosotros (+974 1234 5678)
+            </a>
+        </div>
+    </section>
+
+    <!-- Botón Flotante de WhatsApp -->
+    <a href="https://wa.me/97412345678?text=Hola,%20vengo%20desde%20su%20sitio%20web" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Contacto por WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+        <span class="tooltip">¡Escríbenos ahora!</span>
+    </a>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <blockquote class="motivational-phrase">
+                <i class="fa-solid fa-quote-left"></i>
+                "Cada estampado es un lienzo para expresar quién eres. No solo creamos productos, transformamos tus ideas en pasiones que puedes vestir y compartir con el mundo."
+                <i class="fa-solid fa-quote-right"></i>
+            </blockquote>
+            <p class="copyright">&copy; 2026 Ventas de Productos Estampados. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
 </body>
 </html>
